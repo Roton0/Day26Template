@@ -1,0 +1,847 @@
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "League Spartan", sans-serif;
+}
+
+.container_extra {
+    width: 1250px;
+    margin: auto;
+}
+
+header {
+    background: rgb(231, 230, 230);
+}
+
+nav {
+    margin: 16px 0px;
+    padding-left: 40px;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+nav ul li a {
+    color: rgb(95, 94, 94);
+    font-weight: 500;
+    padding: 0px 10px;
+    display: inline-block;
+    position: relative;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+nav ul li .active::after {
+    content: "";
+    width: 100%;
+    border-bottom: 2px solid rgb(149, 133, 237);
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -25px;
+    transition: all 0.4s ease 0s;
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0px;
+    border-bottom: 2px solid rgb(149, 133, 237);
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -25px;
+    transition: all 0.4s ease 0s;
+}
+
+nav ul li:nth-child(1) a {
+    color: rgb(25, 25, 198);
+    font-weight: 600;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li ul {
+    position: absolute;
+    top: 136%;
+    left: 0px;
+    padding: 0px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
+    z-index: 999;
+}
+
+nav ul li ul li {
+    background-color: rgb(253, 253, 253);
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    transition: all 0.5s ease 0s;
+    list-style: none;
+    display: flex;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li ul li a {
+    background: rgb(0, 16, 245);
+    padding: 14px 15px;
+    display: inline-block;
+    font-size: 18px;
+    color: white !important;
+}
+
+.btn-white {
+    background-color: rgb(255, 255, 255);
+    width: 130px;
+    height: 40px;
+    color: rgb(55, 99, 235);
+    font-size: 18px;
+    border-radius: 25px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 500;
+    transition: all 0.4s ease-in-out 0s;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn-white::after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 100%;
+    background: rgb(91, 89, 207);
+    color: white;
+    font-size: 18px;
+    border-radius: 25px;
+    line-height: 40px;
+    top: 0px;
+    left: 0px;
+    visibility: hidden;
+    z-index: -1;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+nav ul li .active:hover {
+    color: rgb(25, 25, 198);
+}
+
+nav ul li a:hover {
+    color: rgb(95, 94, 94);
+}
+
+nav ul li:hover a::after {
+    width: 100%;
+}
+
+.btn-white:hover {
+    color: white;
+}
+
+.btn-white:hover::after {
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+
+nav ul li:hover ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+nav ul li:hover ul li a::after {
+    width: 0px;
+}
+
+.banner-section {
+    background-color: rgb(237, 246, 255);
+    height: 67vh;
+}
+
+.title-left {
+    margin-left: 14%;
+}
+
+.banner-title h1 {
+    font-size: 51px;
+    line-height: 48px;
+    width: 88%;
+    margin-bottom: 35px;
+    margin-top: 172px;
+}
+
+.banner-title p {
+    color: rgb(137, 146, 154);
+    font-size: 18px;
+    line-height: 25px;
+    width: 72%;
+}
+
+.banner-img {
+    overflow: hidden;
+    margin-left: -269px;
+    display: flex;
+    justify-content: end;
+}
+
+.banner-img img {
+    border-radius: 50%;
+    position: relative;
+    top: -130px;
+    left: 140px;
+    height: 81vh;
+    z-index: 1;
+}
+
+.hover-part {
+    transition: all 0.6s ease-in-out 0s;
+}
+
+.hover-part:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 16, 245);
+}
+
+.service-title-section h6 {
+    color: rgb(189, 178, 241);
+    margin-top: 45px;
+}
+
+.service-title-section h1 {
+    font-size: 52px;
+    line-height: 55px;
+    width: 50%;
+}
+
+.service-title-section h3 {
+    background-color: rgb(189, 178, 241);
+    margin-left: 5px;
+    width: 3%;
+    height: 3px;
+    margin-bottom: 30px;
+}
+
+.service-title-section p {
+    color: rgb(137, 146, 154);
+    font-size: 16px;
+    line-height: 25px;
+    width: 35%;
+}
+
+.item1 {
+    background-color: rgb(249, 252, 255);
+    width: 300px;
+    height: 280px;
+    transition: all 0.8s ease-in-out 0s;
+}
+
+.item h4 {}
+
+.item span {}
+
+.item span i {
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    padding: 18px;
+    border-radius: 50% 50% 50% 0px;
+    background-color: rgb(82, 82, 240);
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.item h3 {
+    background-color: rgb(189, 178, 241);
+    width: 11%;
+    height: 3px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.item p {
+    font-size: 20px;
+    color: rgb(137, 146, 154);
+}
+
+.patern {
+    position: relative;
+}
+
+.patern img {
+    position: absolute;
+    left: 223px;
+    top: -193px;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.item1:hover {
+    background-color: rgb(82, 82, 240);
+    color: white;
+}
+
+.item1:hover p {
+    color: white;
+}
+
+.item1:hover .item span i {
+    background-color: white;
+    color: rgb(82, 82, 240);
+}
+
+.item1:hover .item h3 {
+    background-color: white;
+    width: 20%;
+}
+
+.player {
+    margin-top: 100px;
+    background: url("https://i.ibb.co/yFFZ30h/video-bg.jpg") center top / cover no-repeat fixed, linear-gradient(rgba(66, 67, 110, 0.7), rgba(66, 67, 110, 0.7));
+    padding: 300px 0px;
+    background-blend-mode: overlay;
+}
+
+.player-title {
+    color: white;
+}
+
+.player-title h5 {
+    font-size: 16px;
+}
+
+.player-title h1 {}
+
+.player-title h4 {
+    background-color: white;
+    width: 5%;
+    height: 3px;
+    position: relative;
+    left: 47%;
+    top: -7px;
+}
+
+.player-title p {
+    width: 22%;
+    font-size: 18px;
+    position: relative;
+    left: 40%;
+}
+
+.player-title span i {
+    margin-top: 60px;
+    font-size: 30px;
+    position: absolute;
+    top: -35px;
+    left: 30px;
+}
+
+.player-title span {
+    background: white;
+    color: rgb(71, 135, 255);
+    border-radius: 50%;
+    position: relative;
+    height: 80px;
+    width: 80px;
+    display: inline-block;
+}
+
+.player-title span::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    width: 80px;
+    height: 80px;
+    left: -1px;
+    border-radius: 50%;
+    animation: 1.5s ease-out 0s infinite normal none running playbtn;
+    border: 1px solid white;
+}
+
+.player-title span::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    width: 80px;
+    height: 80px;
+    left: -1px;
+    border-radius: 50%;
+    animation: 1.3s ease-out 0s infinite normal none running playbtn_same;
+    border: 1px solid white;
+}
+
+@keyframes playbtn {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    30% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    60% {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+@keyframes playbtn_same {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    30% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    60% {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+.pricing-title-section {
+    background: rgb(246, 249, 252);
+}
+
+.pricing-title h6 {
+    color: rgb(103, 128, 237);
+    margin-top: 45px;
+}
+
+.pricing-title h2 {
+    font-size: 35px;
+    margin-bottom: 45px;
+    position: relative;
+}
+
+.pricing-title h2::after {
+    content: "";
+    background: rgb(44, 91, 234);
+    width: 3%;
+    height: 3px;
+    position: absolute;
+    left: 48%;
+    bottom: -40%;
+    display: flex;
+    justify-content: center;
+}
+
+.pricing-title p {
+    color: rgb(137, 146, 154);
+    font-size: 20px;
+    width: 35%;
+    margin: auto auto 60px;
+}
+
+.card {
+    width: 384px;
+    height: 530px;
+    margin: auto auto 80px;
+    transition: all 0.5s ease-in 0s;
+}
+
+.card-title h1 {
+    font-size: 50px !important;
+}
+
+.card-title h1::after {
+    content: "";
+    background: rgb(221, 221, 221);
+    width: 220px;
+    height: 1px;
+    position: absolute;
+    left: 23%;
+    top: 45%;
+    margin: auto;
+}
+
+.card-body p {
+    font-size: 20px;
+    color: rgb(161, 161, 164);
+}
+
+.btn-white1 {
+    background-color: rgb(48, 102, 237);
+    color: white;
+    font-size: 18px;
+    border-radius: 25px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 500;
+    transition: all 0.5s ease-in 0s;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-white1::after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 100%;
+    background: rgb(48, 102, 237);
+    font-size: 18px;
+    border-radius: 25px 0px 0px 25px;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    transition: all 0.5s ease-in 0s;
+}
+
+.card:hover {
+    background: rgb(48, 102, 237);
+    color: white;
+}
+
+.card:hover .card-body p {
+    color: white;
+}
+
+.card:hover .card-body a {
+    background: white;
+    color: rgb(152, 180, 255);
+}
+
+.btn-white1:hover::after {
+    width: 100%;
+}
+
+.btn-white1:hover {
+    color: white;
+}
+
+.banner-section1 {
+    background-image: url("https://i.ibb.co/4NqTLHC/free-bg.jpg"), linear-gradient(rgba(76, 115, 233, 0.9), rgba(76, 115, 233, 0.9));
+    padding: 200px;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.banner-title1 h6 {
+    font-size: 20px;
+}
+
+.banner-title1 h2 {
+    font-size: 35px;
+    font-weight: 600;
+    width: 35%;
+    margin: auto auto 45px;
+    position: relative;
+}
+
+.banner-title1 h2::after {
+    content: "";
+    background: white;
+    width: 10%;
+    height: 1px;
+    position: absolute;
+    left: 44%;
+    bottom: -17%;
+}
+
+.banner-title1 p {
+    font-size: 20px;
+    width: 37%;
+    margin: auto;
+}
+
+.btn-infos {
+    background: rgb(255, 255, 255);
+    color: rgb(61, 139, 253);
+    font-size: 19px;
+    border-radius: 25px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 500;
+    transition: all 0.5s ease-in 0s;
+    position: relative;
+    z-index: 1;
+    margin-top: 40px;
+    border: 1px solid rgb(51, 99, 220);
+}
+
+.btn-infos::after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 100%;
+    background: rgb(49, 102, 240);
+    font-size: 18px;
+    border-radius: 25px;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s ease-in 0s;
+    border: 1px solid white;
+}
+
+.btn-infos:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+
+.btn-infos:hover {
+    color: rgb(221, 221, 221);
+}
+
+.subscribe-section {
+    background: rgb(246, 249, 252);
+    padding: 60px;
+}
+
+.card1 {
+    background: rgb(55, 99, 235);
+    width: 664px;
+    height: 250px;
+}
+
+.card2 {
+    background: white;
+}
+
+.now {
+    color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+    font-size: 18px;
+}
+
+.now:hover {
+    color: white;
+}
+
+.title2 a {
+    margin-top: 100px;
+}
+
+.extra {
+    margin-left: -3%;
+}
+
+.para_content {}
+
+.para_content h4 {
+    font-weight: 400;
+    color: rgb(76, 114, 236);
+    margin-bottom: 10px;
+}
+
+.para_content h2 {
+    font-size: 45px;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.para_content h2::after {
+    content: "";
+    height: 3px;
+    width: 12%;
+    background-color: rgb(76, 114, 236);
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+}
+
+.para_content p {
+    font-size: 22px;
+    color: rgb(147, 146, 154);
+    font-weight: 300;
+}
+
+.logo_img {
+    opacity: 0.5;
+    width: 100%;
+    height: 170px;
+    line-height: 170px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.4s ease 0s;
+}
+
+.logo_img img {
+    width: 80%;
+}
+
+.logo_img:hover {
+    background-color: rgb(246, 249, 252);
+    opacity: 1;
+}
+
+.blog_title {}
+
+.blog_title h4 {
+    font-size: 21px;
+}
+
+.blog_title h2 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.blog_title h2::after {
+    inset: 82px 0px 0px;
+    margin: auto;
+    width: 9%;
+}
+
+.blog_title p {}
+
+.blog_section {}
+
+.blog_item {}
+
+.blog_image {
+    position: relative;
+}
+
+.blog_image img {
+    border-radius: 5px;
+}
+
+.blog_author {
+    background-color: rgb(55, 99, 235);
+    height: 50px;
+    width: 46%;
+    padding: 5px 10px;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 25px;
+    right: 15px;
+}
+
+.blog_author img {
+    height: 35px;
+    border-radius: 50%;
+}
+
+.blog_author h5 {
+    margin-bottom: 0px;
+    margin-left: 10px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+}
+
+.blog_content {
+    margin-bottom: 50px;
+}
+
+.blog_content h3 {
+    font-size: 27px;
+    color: #071727;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.blog_content p {
+    font-size: 19px;
+    color: #ada7b6;
+}
+
+footer {
+    background-color: rgb(8, 24, 40);
+    color: rgb(255, 255, 255);
+}
+
+.footer_top {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.footer_logo {}
+
+.footer_logo img {
+    height: 113px;
+    width: 178px;
+}
+
+.footer_top p {
+    font-size: 20px;
+    padding-right: 50px;
+    margin-top: 30px;
+    line-height: 32px;
+    color: rgb(206, 209, 212) !important;
+}
+
+.footer_top ul {
+    list-style: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+
+.footer_icon {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 50%;
+}
+
+.footer_top ul li {}
+
+.footer_top ul li a {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.footer_item {}
+
+.footer_item h3 {
+    font-weight: 400;
+    position: relative;
+    padding-left: 15px;
+}
+
+.footer_item h3::before {
+    content: "";
+    position: absolute;
+    height: 90%;
+    border-radius: 20px;
+    width: 4px;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(56, 101, 239);
+}
+
+.footer_item ul {}
+
+.footer_item ul li {
+    padding-bottom: 15px;
+}
+
+.footer_item ul li a {
+    color: rgb(142, 147, 161);
+}
+
+.footer_bottom {}
+
+.footer_bottom p {
+    border-top: 1px solid rgb(72, 83, 95);
+    font-size: 18px;
+    padding: 30px 0px;
+    color: rgb(196, 200, 204);
+}
