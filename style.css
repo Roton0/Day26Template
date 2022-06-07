@@ -493,6 +493,7 @@ nav ul li:hover ul li a::after {
     transition: all 0.5s ease-in 0s;
     position: relative;
     z-index: 1;
+    overflow: hidden;
 }
 
 .btn-white1::after {
